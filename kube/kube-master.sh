@@ -25,3 +25,5 @@ echo "*****************************************"
 echo "STEP 5 : INSTALL WEAVE NET NETWORK PLUGIN"
 echo "*****************************************"
 kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 | tr -d '\n')"
+
+# kubeadm token create --print-join-command
